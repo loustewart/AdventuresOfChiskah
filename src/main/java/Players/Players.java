@@ -14,8 +14,8 @@ public abstract class Players {
     public Players(String name, int healthPoints, int coins){
         this.name = name;
         this.healthPoints = healthPoints;
-        this.weapons = new ArrayList<Weapon>();
-        this.spells = new ArrayList<Spell>();
+        this.weapons = weapons;
+        this.spells = spells;
         this.coins = coins;
     }
 
@@ -58,4 +58,5 @@ public abstract class Players {
     public void setCoins(int coins) {
         this.coins = coins;
     }
+
 }
